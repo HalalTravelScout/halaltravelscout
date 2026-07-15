@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import klDiorama from "@/assets/kl-diorama.png.asset.json";
-import istImg from "@/assets/istanbul-architecture.jpg";
+import istanbulDiorama from "@/assets/istanbul-diorama.png.asset.json";
 import baliImg from "@/assets/bali-landscape.jpg";
 
 export const Route = createFileRoute("/itineraries")({
