@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import heroImg from "@/assets/hero-landscape.jpg";
+import dioramaAsset from "@/assets/kl-diorama.jpg.asset.json";
 import foodImg from "@/assets/food-malaysia.jpg";
 
 export const Route = createFileRoute("/")({
@@ -21,47 +21,48 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <SiteLayout>
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={heroImg}
-            alt="Skyline at golden hour with mosque domes framed by tropical greenery"
-            className="w-full h-full object-cover"
-            width={1920}
-            height={1080}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.22_0.03_175/0.55)] via-[oklch(0.22_0.03_175/0.4)] to-background" />
-        </div>
-        <div className="relative container-prose py-24 md:py-36 text-center">
-          <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-[color:var(--cream)]/90 mb-6">
-            Travel · Discover · Verify
-          </p>
-          <h1 className="wordmark text-5xl md:text-7xl text-[color:var(--cream)]">
-            HalalTravelScout
-          </h1>
-          <p className="mt-6 text-lg md:text-xl text-[color:var(--cream)]/95 italic">
-            1 country a week, 1 tip a day — follow the journey.
-          </p>
-          <p className="mt-6 max-w-2xl mx-auto text-[color:var(--cream)]/90 text-base md:text-lg">
-            An insider scout for halal family travel. Verified food, prayer facilities, and
-            family-friendly stops — written honestly, checked carefully.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-3 justify-center">
-            <Link
-              to="/itineraries"
-              className="inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition"
-            >
-              Sample itineraries
-            </Link>
-            <a
-              href="https://instagram.com/halaltravelscout"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center rounded-full border border-[color:var(--cream)]/70 text-[color:var(--cream)] px-6 py-3 text-sm font-medium hover:bg-[color:var(--cream)]/10 transition"
-            >
-              Follow on Instagram
-            </a>
+      {/* Hero — floating diorama */}
+      <section className="relative overflow-hidden bg-background">
+        <div className="container-prose pt-10 md:pt-16 pb-16 md:pb-24 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+          <div className="order-2 md:order-1 text-center md:text-left">
+            <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-accent mb-5 font-medium">
+              Travel · Discover · Verify
+            </p>
+            <h1 className="wordmark text-5xl md:text-6xl lg:text-7xl">
+              HalalTravelScout
+            </h1>
+            <p className="mt-5 text-lg md:text-xl text-foreground/80 italic">
+              1 country a week, 1 tip a day — follow the journey.
+            </p>
+            <p className="mt-5 max-w-xl md:mx-0 mx-auto text-foreground/80 text-base md:text-lg">
+              An insider scout for halal family travel. Verified food, prayer facilities, and
+              family-friendly stops — written honestly, checked carefully.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
+              <Link
+                to="/itineraries"
+                className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition"
+              >
+                Sample itineraries
+              </Link>
+              <a
+                href="https://instagram.com/halaltravelscout"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-full border border-primary/40 text-primary px-6 py-3 text-sm font-medium hover:bg-primary/5 transition"
+              >
+                Follow on Instagram
+              </a>
+            </div>
+          </div>
+          <div className="order-1 md:order-2 relative">
+            <img
+              src={dioramaAsset.url}
+              alt="Kuala Lumpur skyline as a floating diorama — a chunk of earth with scattered debris beneath the city, on a clean cream background"
+              className="w-full h-auto object-contain drop-shadow-2xl"
+              width={1200}
+              height={1200}
+            />
           </div>
         </div>
       </section>
