@@ -66,7 +66,6 @@ function Home() {
           </div>
         </div>
       </section>
-      </section>
 
       {/* Intro */}
       <section className="container-prose py-20 md:py-28">
