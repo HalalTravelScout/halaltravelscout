@@ -34,17 +34,41 @@ type Itinerary = {
   days: Day[];
 };
 
-const samplePrayerTimes = {
-  date: "Saturday, 15 March 2026",
-  city: "Kuala Lumpur",
-  times: [
-    { name: "Fajr", time: "6:12 AM" },
-    { name: "Zuhr", time: "1:18 PM" },
-    { name: "Asr", time: "4:42 PM" },
-    { name: "Maghrib", time: "7:28 PM" },
-    { name: "Isha", time: "8:42 PM" },
-  ],
-};
+const samplePrayerTimes = [
+  {
+    date: "Saturday, 15 March 2026",
+    city: "Kuala Lumpur",
+    times: [
+      { name: "Fajr", time: "6:12 AM" },
+      { name: "Zuhr", time: "1:18 PM" },
+      { name: "Asr", time: "4:42 PM" },
+      { name: "Maghrib", time: "7:28 PM" },
+      { name: "Isha", time: "8:42 PM" },
+    ],
+  },
+  {
+    date: "Saturday, 15 March 2026",
+    city: "Istanbul",
+    times: [
+      { name: "Fajr", time: "5:42 AM" },
+      { name: "Zuhr", time: "1:08 PM" },
+      { name: "Asr", time: "4:40 PM" },
+      { name: "Maghrib", time: "7:45 PM" },
+      { name: "Isha", time: "9:18 PM" },
+    ],
+  },
+  {
+    date: "Saturday, 15 March 2026",
+    city: "Bali (Denpasar)",
+    times: [
+      { name: "Fajr", time: "5:48 AM" },
+      { name: "Zuhr", time: "12:18 PM" },
+      { name: "Asr", time: "3:36 PM" },
+      { name: "Maghrib", time: "6:28 PM" },
+      { name: "Isha", time: "7:42 PM" },
+    ],
+  },
+];
 
 const itineraries: Itinerary[] = [
   {
