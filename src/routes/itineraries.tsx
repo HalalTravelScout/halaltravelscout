@@ -23,7 +23,7 @@ export const Route = createFileRoute("/itineraries")({
   component: Itineraries,
 });
 
-type Day = { title: string; food: string; prayer: string; family: string };
+type Day = { title: string; food: string; family: string };
 type Itinerary = {
   id: string;
   city: string;
@@ -32,6 +32,18 @@ type Itinerary = {
   intro: string;
   image: string;
   days: Day[];
+};
+
+const samplePrayerTimes = {
+  date: "Saturday, 15 March 2026",
+  city: "Kuala Lumpur",
+  times: [
+    { name: "Fajr", time: "6:12 AM" },
+    { name: "Zuhr", time: "1:18 PM" },
+    { name: "Asr", time: "4:42 PM" },
+    { name: "Maghrib", time: "7:28 PM" },
+    { name: "Isha", time: "8:42 PM" },
+  ],
 };
 
 const itineraries: Itinerary[] = [
@@ -47,31 +59,26 @@ const itineraries: Itinerary[] = [
       {
         title: "Day 1 — Arrive & settle in Bukit Bintang",
         food: "Nasi lemak at a JAKIM-certified café near the hotel; teh tarik for the jet lag.",
-        prayer: "Musallah inside Pavilion KL (Level 6 back-of-house corridor) for Zuhr & Asr.",
         family: "Evening walk along Jalan Alor's covered street for a gentle intro to the city.",
       },
       {
         title: "Day 2 — Old KL & National Mosque",
         food: "Lunch at a halal-certified Malay warung near Central Market.",
-        prayer: "Zuhr at Masjid Negara (National Mosque) — visitor abayas provided at the entrance.",
         family: "Merdeka Square, Sultan Abdul Samad building, and the KL Forest Eco Park canopy walk.",
       },
       {
         title: "Day 3 — KLCC & Islamic Arts Museum",
         food: "Halal-certified Middle Eastern lunch in the KLCC area; dinner at Suria KLCC food court (all halal).",
-        prayer: "Masjid As-Syakirin inside KLCC Park — a short walk from the Petronas Towers.",
         family: "Islamic Arts Museum Malaysia — one of the calmest, most beautiful museums in the region and very kid-friendly.",
       },
       {
         title: "Day 4 — Batu Caves day trip",
         food: "Pack halal snacks; sit-down lunch back in the city at a certified restaurant.",
-        prayer: "Small musallah near the Batu Caves entrance; better facilities at KL Sentral on the way back.",
         family: "The colourful staircase and cave temple are a striking landscape; keep young children close on the climb.",
       },
       {
         title: "Day 5 — Slow morning & departure",
         food: "Breakfast roti canai at a certified mamak; last-minute kuih from the mall.",
-        prayer: "KLIA has spacious surau facilities landside and airside — no need to rush salah before flying.",
         family: "Souvenir shopping at Central Market or Publika before heading to the airport.",
       },
     ],
@@ -88,25 +95,21 @@ const itineraries: Itinerary[] = [
       {
         title: "Day 1 — Sultanahmet on foot",
         food: "Traditional Turkish breakfast at a family-run café in Sultanahmet.",
-        prayer: "Zuhr at the Blue Mosque (Sultan Ahmed); Asr at Hagia Sophia (now a working mosque again).",
-        family: "Walk between the two mosques and rest in the gardens — great for tired little legs.",
+        family: "Walk between the Blue Mosque and Hagia Sophia and rest in the gardens — great for tired little legs.",
       },
       {
         title: "Day 2 — Bosphorus & Üsküdar",
         food: "Grilled fish along the Bosphorus (confirm halal chicken/meat mains for kids at the same spot).",
-        prayer: "Beautiful Ottoman mosques on both sides of the water — Mihrimah Sultan in Üsküdar is a favourite.",
         family: "Ferry ride across to the Asian side; the crossing itself is the highlight for children.",
       },
       {
         title: "Day 3 — Grand Bazaar & Süleymaniye",
         food: "Lokantas around the bazaar serve home-style Turkish food; sweets from a well-known baklava house nearby.",
-        prayer: "Süleymaniye Mosque is a short uphill walk from the bazaar — spacious and calming.",
-        family: "Book Nizamiye courtyard or a hammam session for older kids and adults (family-friendly hours).",
+        family: "Book a courtyard stop or a family-friendly hammam session for older kids and adults.",
       },
       {
         title: "Day 4 — Slow morning & departure",
         food: "One last simit and çay by the water.",
-        prayer: "IST Airport has a generously sized mosque post-security.",
         family: "If time allows, a short stop at Miniatürk to see Turkey's monuments in miniature — a hit with kids.",
       },
     ],
@@ -123,19 +126,16 @@ const itineraries: Itinerary[] = [
       {
         title: "Day 1 — Nusa Dua base & beach day",
         food: "Halal-certified Indonesian restaurant inside the Nusa Dua complex; nasi campur for the whole family.",
-        prayer: "Musallah at Bali Collection shopping area; larger mosque a short taxi ride away in Kuta.",
         family: "Calm beach at Nusa Dua — great for young children compared to the surfier west coast.",
       },
       {
         title: "Day 2 — Ubud & rice terraces",
         food: "Book ahead at a halal-certified Ubud restaurant; pack snacks for the drive.",
-        prayer: "Bring a prayer mat — options in central Ubud are limited; ask hotel reception for the nearest musallah.",
         family: "Tegallalang rice terraces for the landscape and a gentle walk; skip the monkey forest with very young kids.",
       },
       {
         title: "Day 3 — Uluwatu cliffs & departure",
         food: "Grilled seafood lunch at a halal-certified spot in the Jimbaran area (confirm all mains, not just seafood).",
-        prayer: "Ngurah Rai Airport has a musallah — usable but modest; pray before leaving your hotel if possible.",
         family: "Sunset at the Uluwatu cliffs is the postcard view; leave earlier than you think for the drive.",
       },
     ],
@@ -158,6 +158,28 @@ function Itineraries() {
       </section>
 
       <section className="container-prose pb-24 space-y-20">
+        <div className="rounded-2xl border border-border/70 bg-card p-6 md:p-8 shadow-sm">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <p className="uppercase tracking-widest text-xs text-accent font-medium">Sample Prayer Times</p>
+              <h2 className="mt-2 text-xl md:text-2xl">
+                {samplePrayerTimes.city} — {samplePrayerTimes.date}
+              </h2>
+              <p className="mt-1 text-sm text-foreground/70">
+                Times shift through the year; use a local prayer-time app to confirm.
+              </p>
+            </div>
+            <dl className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+              {samplePrayerTimes.times.map((t) => (
+                <div key={t.name} className="min-w-[4.5rem]">
+                  <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">{t.name}</dt>
+                  <dd className="mt-1 text-foreground/90 font-medium">{t.time}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+
         {itineraries.map((it) => (
           <article key={it.id} id={it.id} className="scroll-mt-24">
             <div className="grid md:grid-cols-5 gap-8 items-start">
@@ -186,14 +208,10 @@ function Itineraries() {
                     className="rounded-xl border border-border/70 bg-card p-6 shadow-sm"
                   >
                     <h3 className="text-lg md:text-xl">{d.title}</h3>
-                    <dl className="mt-4 grid sm:grid-cols-3 gap-4 text-sm">
+                    <dl className="mt-4 grid sm:grid-cols-2 gap-4 text-sm">
                       <div>
                         <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">Halal food</dt>
                         <dd className="mt-1 text-foreground/85 leading-relaxed">{d.food}</dd>
-                      </div>
-                      <div>
-                        <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">Prayer</dt>
-                        <dd className="mt-1 text-foreground/85 leading-relaxed">{d.prayer}</dd>
                       </div>
                       <div>
                         <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">Family</dt>
