@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import klDiorama from "@/assets/kl-diorama.png.asset.json";
-import istImg from "@/assets/istanbul-architecture.jpg";
+import istanbulDiorama from "@/assets/istanbul-diorama.png.asset.json";
 import baliImg from "@/assets/bali-landscape.jpg";
 
 export const Route = createFileRoute("/itineraries")({
@@ -114,7 +114,7 @@ const itineraries: Itinerary[] = [
     title: "4-Day Family Itinerary: Istanbul",
     intro:
       "Istanbul is layered, walkable, and quietly generous to Muslim families. Meat is generally halal by default in local restaurants, and prayer never feels far away.",
-    image: istImg,
+    image: istanbulDiorama.url,
     days: [
       {
         title: "Day 1 — Sultanahmet on foot",
