@@ -70,9 +70,12 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 
       <footer className="mt-24 border-t border-border/70 bg-secondary/40">
         <div className="container-prose py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-muted-foreground">
-          <div>
-            <div className="wordmark text-lg">HalalTravelScout</div>
-            <p className="mt-1">Travel · Discover · Verify</p>
+          <div className="flex items-center gap-3">
+            <img src={logoAsset.url} alt="" aria-hidden="true" className="h-10 w-10 object-contain" width={40} height={40} />
+            <div>
+              <div className="wordmark text-lg leading-none">HalalTravelScout</div>
+              <p className="mt-1 text-xs tracking-widest uppercase text-accent">Travel · Discover · Verify</p>
+            </div>
           </div>
           <div className="flex flex-col md:items-end gap-1">
             <a
