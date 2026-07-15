@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import klDiorama from "@/assets/kl-diorama.png.asset.json";
 import istanbulDiorama from "@/assets/istanbul-diorama.png.asset.json";
-import baliImg from "@/assets/bali-landscape.jpg";
+import baliDiorama from "@/assets/bali-diorama.png.asset.json";
 
 export const Route = createFileRoute("/itineraries")({
   head: () => ({
@@ -145,7 +145,7 @@ const itineraries: Itinerary[] = [
     title: "3-Day Family Itinerary: Bali (halal-conscious)",
     intro:
       "Bali requires more planning than KL or Istanbul, but a halal-conscious trip is very doable — especially staying near Nusa Dua, Seminyak, or Sanur where certified halal restaurants and prayer rooms are easier to find.",
-    image: baliImg,
+    image: baliDiorama.url,
     days: [
       {
         title: "Day 1 — Nusa Dua base & beach day",
