@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import klImg from "@/assets/hero-landscape.jpg";
+import klDiorama from "@/assets/kl-diorama.png.asset.json";
 import istImg from "@/assets/istanbul-architecture.jpg";
 import baliImg from "@/assets/bali-landscape.jpg";
 
