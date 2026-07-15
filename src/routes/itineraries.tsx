@@ -78,7 +78,7 @@ const itineraries: Itinerary[] = [
     title: "5-Day Family Itinerary: Kuala Lumpur",
     intro:
       "Kuala Lumpur is arguably the easiest big city in the world for a Muslim family. JAKIM-certified halal food is everywhere, mosques dot most neighbourhoods, and mall musallahs are common.",
-    image: klImg,
+    image: klDiorama.url,
     days: [
       {
         title: "Day 1 — Arrive & settle in Bukit Bintang",
