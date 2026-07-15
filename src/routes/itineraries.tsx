@@ -182,26 +182,30 @@ function Itineraries() {
       </section>
 
       <section className="container-prose pb-24 space-y-20">
-        <div className="rounded-2xl border border-border/70 bg-card p-6 md:p-8 shadow-sm">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div>
-              <p className="uppercase tracking-widest text-xs text-accent font-medium">Sample Prayer Times</p>
-              <h2 className="mt-2 text-xl md:text-2xl">
-                {samplePrayerTimes.city} — {samplePrayerTimes.date}
-              </h2>
-              <p className="mt-1 text-sm text-foreground/70">
-                Times shift through the year; use a local prayer-time app to confirm.
-              </p>
-            </div>
-            <dl className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
-              {samplePrayerTimes.times.map((t) => (
-                <div key={t.name} className="min-w-[4.5rem]">
-                  <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">{t.name}</dt>
-                  <dd className="mt-1 text-foreground/90 font-medium">{t.time}</dd>
+        <div className="space-y-6">
+          <p className="uppercase tracking-widest text-xs text-accent font-medium">Sample Prayer Times</p>
+          {samplePrayerTimes.map((pt) => (
+            <div key={pt.city} className="rounded-2xl border border-border/70 bg-card p-6 md:p-8 shadow-sm">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                  <h2 className="text-xl md:text-2xl">
+                    {pt.city} — {pt.date}
+                  </h2>
+                  <p className="mt-1 text-sm text-foreground/70">
+                    Times shift through the year; use a local prayer-time app to confirm.
+                  </p>
                 </div>
-              ))}
-            </dl>
-          </div>
+                <dl className="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+                  {pt.times.map((t) => (
+                    <div key={t.name} className="min-w-[4.5rem]">
+                      <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">{t.name}</dt>
+                      <dd className="mt-1 text-foreground/90 font-medium">{t.time}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </div>
+          ))}
         </div>
 
         {itineraries.map((it) => (
