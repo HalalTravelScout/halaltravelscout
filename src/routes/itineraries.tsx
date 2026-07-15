@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import klImg from "@/assets/hero-landscape.jpg";
+import klDiorama from "@/assets/kl-diorama.png.asset.json";
 import istImg from "@/assets/istanbul-architecture.jpg";
 import baliImg from "@/assets/bali-landscape.jpg";
 
@@ -78,7 +78,7 @@ const itineraries: Itinerary[] = [
     title: "5-Day Family Itinerary: Kuala Lumpur",
     intro:
       "Kuala Lumpur is arguably the easiest big city in the world for a Muslim family. JAKIM-certified halal food is everywhere, mosques dot most neighbourhoods, and mall musallahs are common.",
-    image: klImg,
+    image: klDiorama.url,
     days: [
       {
         title: "Day 1 — Arrive & settle in Bukit Bintang",
