@@ -42,7 +42,7 @@ function MediaKit() {
           },
           {
             h: "Target audience",
-            p: "Muslim families planning meaningful trips: parents in their 30s–50s, multi-generational travellers, and modest-conscious solo scouts.",
+            p: "Muslim families planning meaningful trips: parents in their 30s–55s, multi-generational travellers, and modest-conscious solo scouts.",
           },
           {
             h: "Content format",
@@ -95,10 +95,10 @@ function MediaKit() {
             starting point.
           </p>
           <a
-            href="mailto:hello@halaltravelscout.com"
+            href="mailto:halaltravelscout@hotmail.com"
             className="mt-8 inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition"
           >
-            hello@halaltravelscout.com
+            halaltravelscout@hotmail.com
           </a>
         </div>
       </section>
