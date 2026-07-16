@@ -24,7 +24,7 @@ function Contact() {
     <SiteLayout>
       <section className="container-prose pt-16 md:pt-24 pb-24">
         <p className="uppercase tracking-widest text-xs text-accent font-medium">Contact</p>
-        <h1 className="mt-3 text-4xl md:text-5xl max-w-3xl">Say salaam.</h1>
+        <h1 className="mt-3 text-4xl md:text-5xl max-w-3xl">Al salamo Alaikom.</h1>
         <p className="mt-6 max-w-xl text-foreground/80 text-lg">
           Questions, corrections, partnership ideas, or a place you'd love scouted —
           the door is open.
@@ -32,14 +32,14 @@ function Contact() {
 
         <div className="mt-14 grid md:grid-cols-2 gap-6 max-w-3xl">
           <a
-            href="mailto:hello@halaltravelscout.com"
+            href="mailto:halaltravelscout@hotmail.com"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
               Email
             </p>
             <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
-              hello@halaltravelscout.com
+              halaltravelscout@hotmail.com
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
               Best for partnerships, corrections, and longer notes.
