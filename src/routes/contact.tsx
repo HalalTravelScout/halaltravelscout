@@ -4,17 +4,21 @@ import { SiteLayout } from "@/components/SiteLayout";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — HalalTravelScout" },
+      { title: "Contact HalalTravelScout — Email & Instagram" },
       {
         name: "description",
-        content: "Get in touch with HalalTravelScout via email or Instagram.",
+        content:
+          "Get in touch with HalalTravelScout for partnership ideas, corrections, or scouting requests — by email or Instagram.",
       },
-      { property: "og:title", content: "Contact — HalalTravelScout" },
+      { property: "og:title", content: "Contact HalalTravelScout — Email & Instagram" },
       {
         property: "og:description",
         content: "Email and Instagram — the two best ways to reach HalalTravelScout.",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/contact" },
     ],
+    links: [{ rel: "canonical", href: "/contact" }],
   }),
   component: Contact,
 });
