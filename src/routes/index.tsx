@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops — written honestly, checked carefully.",
+          "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },

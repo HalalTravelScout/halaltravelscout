@@ -75,25 +75,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "HalalTravelScout — Travel · Discover · Verify" },
+      { title: "HalalTravelScout — Halal Family Travel, Verified" },
       {
         name: "description",
         content:
-          "Halal family travel — verified food, prayer facilities, and family-friendly stops. 1 country a week, 1 tip a day.",
+          "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond.",
       },
       { name: "author", content: "HalalTravelScout" },
-      { property: "og:title", content: "HalalTravelScout — Travel · Discover · Verify" },
+      { property: "og:title", content: "HalalTravelScout — Halal Family Travel, Verified" },
       {
         property: "og:description",
         content:
-          "Halal family travel — verified food, prayer facilities, and family-friendly stops.",
+          "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "HalalTravelScout — Halal Family Travel, Verified" },
+      { name: "twitter:description", content: "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/hkC7Vxe0phXyRNyEZXKFk2rzZAf2/social-images/social-1784174849652-HalalTravel_General_Diorama_v2.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/hkC7Vxe0phXyRNyEZXKFk2rzZAf2/social-images/social-1784174849652-HalalTravel_General_Diorama_v2.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
