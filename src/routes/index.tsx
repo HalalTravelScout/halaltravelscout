@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Warm, practical halal travel notes from an insider scout. Verified food, prayer facilities, and family-friendly stops.",
+          "Warm, practical halal travel notes from an insider scout. Verified food, prayer timing, and family-friendly stops.",
       },
       { property: "og:image", content: "https://halaltravelscout.com/og-hero.jpg" },
     ],
@@ -35,7 +35,7 @@ function Home() {
               1 country a week, 1 tip a day — follow the journey.
             </p>
             <p className="mt-5 max-w-xl md:mx-0 mx-auto text-foreground/80 text-base md:text-lg">
-              An insider scout for halal family travel. Verified food, prayer facilities, and
+              An insider scout for halal family travel. Verified food, prayer timing, and
               family-friendly stops — written honestly, checked carefully.
             </p>
             <div className="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
@@ -75,7 +75,7 @@ function Home() {
           <p className="mt-6 text-lg leading-relaxed text-foreground/85">
             HalalTravelScout is a long-term personal project — one traveler, one notebook,
             one country at a time. The goal is simple: skip the vague "halal-friendly"
-            labels and share what's actually verified on the ground, so your family can
+            labels and share what's actually matteres on the ground, so your family can
             plan with confidence.
           </p>
         </div>
@@ -105,10 +105,9 @@ function Home() {
               <li className="flex gap-4">
                 <span className="mt-1 inline-block w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground grid place-items-center font-serif">2</span>
                 <div>
-                  <p className="font-semibold">Prayer facilities</p>
+                  <p className="font-semibold">Prayer Timing</p>
                   <p className="text-sm text-muted-foreground">
-                    Nearby mosques, musallahs in malls and airports, or quiet rooms suitable
-                    for salah on the go.
+                    Prayer timing, musallahs in malls and airports.
                   </p>
                 </div>
               </li>
@@ -118,7 +117,7 @@ function Home() {
                   <p className="font-semibold">Family-friendly, halal-verified stops</p>
                   <p className="text-sm text-muted-foreground">
                     Attractions and neighbourhoods that work for kids, elders, and modest
-                    dress — checked, not assumed.
+                    dress.
                   </p>
                 </div>
               </li>
