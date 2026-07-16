@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import dioramaAsset from "@/assets/kl-diorama.png.asset.json";
+import dioramaAsset from "@/assets/home-diorama.png.asset.json";
 import foodImg from "@/assets/food-malaysia.jpg";
 
 export const Route = createFileRoute("/")({
