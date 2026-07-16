@@ -8,14 +8,18 @@ export const Route = createFileRoute("/media-kit")({
       {
         name: "description",
         content:
-          "Partnership overview for hotels, DMCs, and tourism boards working with Muslim family travellers.",
+          "Partner with HalalTravelScout — audience, content formats, and how hotels, DMCs, and tourism boards can reach Muslim family travellers.",
       },
       { property: "og:title", content: "Media Kit & Partnerships — HalalTravelScout" },
       {
         property: "og:description",
-        content: "Niche, audience, content formats, and how to partner with HalalTravelScout.",
+        content:
+          "Niche, audience, content formats, and how to partner with HalalTravelScout on halal family travel coverage.",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/media-kit" },
     ],
+    links: [{ rel: "canonical", href: "/media-kit" }],
   }),
   component: MediaKit,
 });

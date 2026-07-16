@@ -10,10 +10,18 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Warm, practical halal travel notes from an insider scout. Verified food, prayer timing, and family-friendly stops.",
+          "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond.",
       },
-      { property: "og:image", content: "https://halaltravelscout.com/og-hero.jpg" },
+      { property: "og:title", content: "HalalTravelScout — Halal Family Travel, Verified" },
+      {
+        property: "og:description",
+        content:
+          "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops — written honestly, checked carefully.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Home,
 });
