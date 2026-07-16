@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import dioramaAsset from "@/assets/kl-diorama.png.asset.json";
+import dioramaAsset from "@/assets/home-diorama.png.asset.json";
 import foodImg from "@/assets/food-malaysia.jpg";
 
 export const Route = createFileRoute("/")({
@@ -58,7 +58,7 @@ function Home() {
           <div className="order-1 md:order-2 relative">
             <img
               src={dioramaAsset.url}
-              alt="Kuala Lumpur skyline as a floating diorama — a chunk of earth with scattered debris beneath the city, on a clean cream background"
+              alt="A floating island diorama of iconic Muslim-friendly landmarks from around the world, with Halal Travel spelled in 3D letters"
               className="w-full h-auto object-contain drop-shadow-2xl"
               width={1200}
               height={1200}
