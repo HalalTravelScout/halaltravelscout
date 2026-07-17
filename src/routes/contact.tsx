@@ -85,9 +85,8 @@ function Contact() {
             </p>
           </a>
 
-          {/* TODO: verify LinkedIn company page URL is correct */}
           <a
-            href="https://www.linkedin.com/company/halaltravelscout"
+            href="https://www.linkedin.com/in/mohamed-al-amoodi-93a2a7422"
             target="_blank"
             rel="noreferrer"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
@@ -96,7 +95,7 @@ function Contact() {
               LinkedIn
             </p>
             <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
-              HalalTravelScout
+              Mohamed Al Amoodi
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
               Follow our journey and connect professionally.
