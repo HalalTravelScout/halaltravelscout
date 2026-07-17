@@ -75,6 +75,9 @@ function Contact() {
               Phone
             </p>
             <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
+              Mohamed Mohsen Al Amoodi
+            </p>
+            <p className="mt-1 wordmark text-xl text-primary/80 group-hover:text-accent transition">
               +971 50 771 0072
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
