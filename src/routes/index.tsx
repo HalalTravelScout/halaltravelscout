@@ -83,7 +83,7 @@ function Home() {
           <p className="mt-6 text-lg leading-relaxed text-foreground/85">
             HalalTravelScout is a long-term personal project — one traveler, one notebook,
             one country at a time. The goal is simple: skip the vague "halal-friendly"
-            labels and share what's actually matters on the ground, so your family can
+            labels and share what actually matters on the ground, so your family can
             plan with confidence.
           </p>
         </div>
