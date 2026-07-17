@@ -34,7 +34,7 @@ function Contact() {
           the door is open.
         </p>
 
-        <div className="mt-14 grid md:grid-cols-2 gap-6 max-w-3xl">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
           <a
             href="mailto:halaltravelscout@hotmail.com"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
@@ -64,6 +64,39 @@ function Contact() {
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
               Follow the journey — 1 country a week, 1 tip a day.
+            </p>
+          </a>
+
+          <a
+            href="tel:+971507710072"
+            className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
+          >
+            <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
+              Phone
+            </p>
+            <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
+              +971 50 771 0072
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Best for quick questions or urgent trip planning.
+            </p>
+          </a>
+
+          {/* TODO: verify LinkedIn company page URL is correct */}
+          <a
+            href="https://www.linkedin.com/company/halaltravelscout"
+            target="_blank"
+            rel="noreferrer"
+            className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
+          >
+            <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
+              LinkedIn
+            </p>
+            <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
+              HalalTravelScout
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Follow our journey and connect professionally.
             </p>
           </a>
         </div>
