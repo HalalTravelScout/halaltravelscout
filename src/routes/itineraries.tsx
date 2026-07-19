@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import klDiorama from "@/assets/kl-diorama.png.asset.json";
 import istanbulDiorama from "@/assets/istanbul-diorama.png.asset.json";
