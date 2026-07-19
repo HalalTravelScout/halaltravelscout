@@ -19,12 +19,13 @@ export const Route = createFileRoute("/")({
           "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://halaltravelscout.lovable.app/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/" }],
   }),
   component: Home,
 });
+
 
 function Home() {
   return (
@@ -51,7 +52,7 @@ function Home() {
                 to="/itineraries"
                 className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition"
               >
-                Sample itineraries
+                View sample itineraries
               </Link>
               <a
                 href="https://instagram.com/halaltravelscout"
@@ -59,7 +60,7 @@ function Home() {
                 rel="noreferrer"
                 className="inline-flex items-center rounded-full border border-primary/40 text-primary px-6 py-3 text-sm font-medium hover:bg-primary/5 transition"
               >
-                Follow on Instagram
+                Follow @halaltravelscout on Instagram
               </a>
             </div>
           </div>
@@ -70,8 +71,10 @@ function Home() {
               className="w-full h-auto object-contain drop-shadow-2xl"
               width={1200}
               height={1200}
+              fetchPriority="high"
             />
           </div>
+
         </div>
       </section>
 

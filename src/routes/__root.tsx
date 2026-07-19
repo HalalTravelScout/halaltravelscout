@@ -75,23 +75,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "HalalTravelScout — Halal Family Travel, Verified" },
+      { title: "HalalTravelScout" },
       {
         name: "description",
         content:
-          "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond.",
+          "An insider scout for halal family travel — verified food, prayer timings, and family-friendly stops.",
       },
       { name: "author", content: "HalalTravelScout" },
-      { property: "og:title", content: "HalalTravelScout — Halal Family Travel, Verified" },
-      {
-        property: "og:description",
-        content:
-          "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond.",
-      },
+      { property: "og:site_name", content: "HalalTravelScout" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "HalalTravelScout — Halal Family Travel, Verified" },
-      { name: "twitter:description", content: "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/hkC7Vxe0phXyRNyEZXKFk2rzZAf2/social-images/social-1784174849652-HalalTravel_General_Diorama_v2.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/hkC7Vxe0phXyRNyEZXKFk2rzZAf2/social-images/social-1784174849652-HalalTravel_General_Diorama_v2.webp" },
     ],
@@ -104,7 +97,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              name: "HalalTravelScout",
+              url: "https://halaltravelscout.lovable.app",
+              logo: "https://storage.googleapis.com/gpt-engineer-file-uploads/hkC7Vxe0phXyRNyEZXKFk2rzZAf2/social-images/social-1784174849652-HalalTravel_General_Diorama_v2.webp",
+              sameAs: ["https://instagram.com/halaltravelscout"],
+            },
+            {
+              "@type": "WebSite",
+              name: "HalalTravelScout",
+              url: "https://halaltravelscout.lovable.app",
+            },
+          ],
+        }),
+      },
+    ],
   }),
+
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,

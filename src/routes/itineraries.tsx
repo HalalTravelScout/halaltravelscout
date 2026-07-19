@@ -11,17 +11,63 @@ export const Route = createFileRoute("/itineraries")({
       {
         name: "description",
         content:
-          "Three illustrative halal family itineraries — Kuala Lumpur, Istanbul, and Bali — to inspire your own planning.",
+          "Three illustrative halal family itineraries — Kuala Lumpur, Istanbul, and Bali — with verified halal food notes, family stops, and sample prayer times.",
       },
       { property: "og:title", content: "Sample Itineraries — HalalTravelScout" },
       {
         property: "og:description",
         content: "Example halal family trips for Kuala Lumpur, Istanbul, and Bali.",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://halaltravelscout.lovable.app/itineraries" },
+    ],
+    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/itineraries" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "HalalTravelScout Sample Itineraries",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              item: {
+                "@type": "Article",
+                headline: "5-Day Family Itinerary: Kuala Lumpur",
+                about: "Halal family travel in Kuala Lumpur, Malaysia",
+                url: "https://halaltravelscout.lovable.app/itineraries#kl",
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              item: {
+                "@type": "Article",
+                headline: "4-Day Family Itinerary: Istanbul",
+                about: "Halal family travel in Istanbul, Turkey",
+                url: "https://halaltravelscout.lovable.app/itineraries#ist",
+              },
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              item: {
+                "@type": "Article",
+                headline: "3-Day Family Itinerary: Bali",
+                about: "Halal-conscious family travel in Bali, Indonesia",
+                url: "https://halaltravelscout.lovable.app/itineraries#bali",
+              },
+            },
+          ],
+        }),
+      },
     ],
   }),
   component: Itineraries,
 });
+
 
 type Day = { title: string; food: string; family: string };
 type Itinerary = {

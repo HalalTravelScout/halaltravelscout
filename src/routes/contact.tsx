@@ -4,24 +4,48 @@ import { SiteLayout } from "@/components/SiteLayout";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact HalalTravelScout — Email & Instagram" },
+      { title: "Contact HalalTravelScout — Email, Phone & Social" },
       {
         name: "description",
         content:
-          "Get in touch with HalalTravelScout for partnership ideas, corrections, or scouting requests — by email or Instagram.",
+          "Reach HalalTravelScout for partnership ideas, corrections, or scouting requests — by email, phone, Instagram, or LinkedIn.",
       },
-      { property: "og:title", content: "Contact HalalTravelScout — Email & Instagram" },
+      { property: "og:title", content: "Contact HalalTravelScout" },
       {
         property: "og:description",
-        content: "Email and Instagram — the two best ways to reach HalalTravelScout.",
+        content: "Email, phone, Instagram and LinkedIn — the ways to reach HalalTravelScout.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://halaltravelscout.lovable.app/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/contact" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Mohamed Mohsen Al Amoodi",
+          jobTitle: "Founder, HalalTravelScout",
+          email: "halaltravelscout@hotmail.com",
+          telephone: "+971507710072",
+          url: "https://halaltravelscout.lovable.app/contact",
+          sameAs: [
+            "https://instagram.com/halaltravelscout",
+            "https://www.linkedin.com/in/mohamed-al-amoodi-93a2a7422",
+          ],
+          worksFor: {
+            "@type": "Organization",
+            name: "HalalTravelScout",
+            url: "https://halaltravelscout.lovable.app",
+          },
+        }),
+      },
+    ],
   }),
   component: Contact,
 });
+
 
 function Contact() {
   return (
