@@ -11,7 +11,7 @@ export const Route = createFileRoute("/itineraries")({
       {
         name: "description",
         content:
-          "Three illustrative halal family itineraries — Kuala Lumpur, Istanbul, and Bali — with verified halal food notes, family stops, and sample prayer times.",
+          "Illustrative halal family itineraries for Kuala Lumpur, Istanbul, and Bali — plus a dedicated Bali halal food and family travel guide with verified stops and sample prayer times."
       },
       { property: "og:title", content: "Sample Itineraries — HalalTravelScout" },
       {
