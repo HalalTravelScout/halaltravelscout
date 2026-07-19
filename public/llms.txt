@@ -1,0 +1,13 @@
+# HalalTravelScout
+
+> An insider scout for halal family travel — verified food, prayer timings, and family-friendly stops, written honestly and checked carefully.
+
+HalalTravelScout is a long-term personal project by one traveler covering halal family travel — one country at a time. The site is a small, evergreen guide rather than a growing blog.
+
+## Pages
+
+- [Home](/): Brand introduction and what halal family travel means in practice.
+- [Sample Itineraries](/itineraries): Three fixed family itineraries — Kuala Lumpur, Istanbul, and Bali — plus sample prayer times.
+- [About](/about): The project's approach, methodology, and voice.
+- [Media Kit](/media-kit): Partnership information for hotels, DMCs, and tourism boards.
+- [Contact](/contact): Email, phone, Instagram, and LinkedIn.
