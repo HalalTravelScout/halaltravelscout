@@ -15,6 +15,7 @@ import { Route as ItinerariesRouteImport } from './routes/itineraries'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ItinerariesIndexRouteImport } from './routes/itineraries.index'
 import { Route as ItinerariesBaliRouteImport } from './routes/itineraries.bali'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -47,6 +48,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ItinerariesIndexRoute = ItinerariesIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ItinerariesRoute,
+} as any)
 const ItinerariesBaliRoute = ItinerariesBaliRouteImport.update({
   id: '/bali',
   path: '/bali',
@@ -61,15 +67,16 @@ export interface FileRoutesByFullPath {
   '/media-kit': typeof MediaKitRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/itineraries/bali': typeof ItinerariesBaliRoute
+  '/itineraries/': typeof ItinerariesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/itineraries': typeof ItinerariesRouteWithChildren
   '/media-kit': typeof MediaKitRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/itineraries/bali': typeof ItinerariesBaliRoute
+  '/itineraries': typeof ItinerariesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -80,6 +87,7 @@ export interface FileRoutesById {
   '/media-kit': typeof MediaKitRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/itineraries/bali': typeof ItinerariesBaliRoute
+  '/itineraries/': typeof ItinerariesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -91,15 +99,16 @@ export interface FileRouteTypes {
     | '/media-kit'
     | '/sitemap.xml'
     | '/itineraries/bali'
+    | '/itineraries/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/contact'
-    | '/itineraries'
     | '/media-kit'
     | '/sitemap.xml'
     | '/itineraries/bali'
+    | '/itineraries'
   id:
     | '__root__'
     | '/'
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
     | '/media-kit'
     | '/sitemap.xml'
     | '/itineraries/bali'
+    | '/itineraries/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -164,6 +174,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/itineraries/': {
+      id: '/itineraries/'
+      path: '/'
+      fullPath: '/itineraries/'
+      preLoaderRoute: typeof ItinerariesIndexRouteImport
+      parentRoute: typeof ItinerariesRoute
+    }
     '/itineraries/bali': {
       id: '/itineraries/bali'
       path: '/bali'
@@ -176,10 +193,12 @@ declare module '@tanstack/react-router' {
 
 interface ItinerariesRouteChildren {
   ItinerariesBaliRoute: typeof ItinerariesBaliRoute
+  ItinerariesIndexRoute: typeof ItinerariesIndexRoute
 }
 
 const ItinerariesRouteChildren: ItinerariesRouteChildren = {
   ItinerariesBaliRoute: ItinerariesBaliRoute,
+  ItinerariesIndexRoute: ItinerariesIndexRoute,
 }
 
 const ItinerariesRouteWithChildren = ItinerariesRoute._addFileChildren(
