@@ -17,9 +17,10 @@ export const Route = createFileRoute("/media-kit")({
           "Niche, audience, content formats, and how to partner with HalalTravelScout on halal family travel coverage.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/media-kit" },
+      { property: "og:url", content: "https://halaltravelscout.lovable.app/media-kit" },
     ],
-    links: [{ rel: "canonical", href: "/media-kit" }],
+    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/media-kit" }],
+
   }),
   component: MediaKit,
 });
