@@ -272,6 +272,14 @@ function Itineraries() {
                   </p>
                   <h2 className="mt-1 text-2xl md:text-3xl">{it.title}</h2>
                   <p className="mt-3 text-foreground/80 leading-relaxed">{it.intro}</p>
+                  {it.id === "bali" && (
+                    <Link
+                      to="/itineraries/bali"
+                      className="inline-block mt-4 text-primary font-medium hover:text-accent transition-colors"
+                    >
+                      Read the full Bali guide →
+                    </Link>
+                  )}
                 </div>
               </div>
 
