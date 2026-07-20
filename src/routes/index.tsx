@@ -38,7 +38,7 @@ function Home() {
               Travel · Discover · Verify
             </p>
             <h1 className="wordmark text-5xl md:text-6xl lg:text-7xl">
-              HalalTravelScout
+              HalalTravelScout — Halal Family Travel, Verified
             </h1>
             <p className="mt-5 text-lg md:text-xl text-foreground/80 italic">
               1 country a week, 1 tip a day — follow the journey.
@@ -72,6 +72,7 @@ function Home() {
               width={1200}
               height={1200}
               fetchPriority="high"
+              decoding="async"
             />
           </div>
 

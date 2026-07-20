@@ -17,7 +17,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <header className="border-b border-border/70 bg-background/85 backdrop-blur sticky top-0 z-40">
         <div className="container-prose flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <img src={logoAsset.url} alt="HalalTravelScout logo" className="h-11 w-11 object-contain" width={44} height={44} />
+            <img src={logoAsset.url} alt="HalalTravelScout" className="h-11 w-11 object-contain" width={44} height={44} />
             <span className="wordmark text-xl md:text-2xl leading-none">HalalTravelScout</span>
           </Link>
           <nav className="hidden md:flex items-center gap-7 text-sm">

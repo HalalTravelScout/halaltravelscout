@@ -196,7 +196,7 @@ function BaliGuide() {
         </div>
 
         <div className="space-y-6">
-          <p className="uppercase tracking-widest text-xs text-accent font-medium">Verified Halal Food</p>
+          <h2 className="uppercase tracking-widest text-xs text-accent font-medium">Verified Halal Food</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {halalRestaurants.map((r) => (
               <div key={r.name} className="rounded-xl border border-border/70 bg-card p-6 shadow-sm">
@@ -213,7 +213,7 @@ function BaliGuide() {
         </div>
 
         <div className="space-y-6">
-          <p className="uppercase tracking-widest text-xs text-accent font-medium">Prayer Spaces</p>
+          <h2 className="uppercase tracking-widest text-xs text-accent font-medium">Prayer Spaces</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {prayerSpaces.map((p) => (
               <div key={p.name} className="rounded-xl border border-border/70 bg-card p-6 shadow-sm">
@@ -226,7 +226,7 @@ function BaliGuide() {
         </div>
 
         <div className="space-y-6">
-          <p className="uppercase tracking-widest text-xs text-accent font-medium">Family-Friendly Stops</p>
+          <h2 className="uppercase tracking-widest text-xs text-accent font-medium">Family-Friendly Stops</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {familyStops.map((s) => (
               <div key={s.name} className="rounded-xl border border-border/70 bg-card p-6 shadow-sm">

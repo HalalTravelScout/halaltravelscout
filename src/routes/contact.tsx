@@ -52,7 +52,8 @@ function Contact() {
     <SiteLayout>
       <section className="container-prose pt-16 md:pt-24 pb-24">
         <p className="uppercase tracking-widest text-xs text-accent font-medium">Contact</p>
-        <h1 className="mt-3 text-4xl md:text-5xl max-w-3xl">Al salamo Alaikom.</h1>
+        <h1 className="mt-3 text-4xl md:text-5xl max-w-3xl">Contact HalalTravelScout</h1>
+        <p className="mt-3 wordmark text-2xl text-accent">Al salamo Alaikom.</p>
         <p className="mt-6 max-w-xl text-foreground/80 text-lg">
           Questions, corrections, partnership ideas, or a place you'd love scouted —
           the door is open.
