@@ -87,6 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/hkC7Vxe0phXyRNyEZXKFk2rzZAf2/social-images/social-1784174849652-HalalTravel_General_Diorama_v2.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/hkC7Vxe0phXyRNyEZXKFk2rzZAf2/social-images/social-1784174849652-HalalTravel_General_Diorama_v2.webp" },
+      { name: "google-site-verification", content: "E-tWtzupQhoz3PLqfo5Ax5h7nDDOeBNrSjS0w54C5gg" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
