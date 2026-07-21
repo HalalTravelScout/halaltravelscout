@@ -9,7 +9,7 @@ export const Route = createFileRoute("/itineraries/bali")({
       {
         name: "description",
         content:
-          "A verified halal food and family travel guide for Bali, Indonesia. Where to stay, halal-certified restaurants, prayer spaces, and a 3-day itinerary for Muslim families.",
+          "Verified halal food and family travel guide for Bali. Includes halal restaurants, prayer spaces, and a 3-day itinerary.",
       },
       {
         property: "og:title",
