@@ -59,7 +59,7 @@ function MediaKit() {
           },
         ].map((c) => (
           <div key={c.h} className="rounded-2xl border border-border/70 bg-card p-8">
-            <h3 className="text-xl">{c.h}</h3>
+            <h2 className="text-xl">{c.h}</h2>
             <p className="mt-3 text-foreground/85 leading-relaxed">{c.p}</p>
           </div>
         ))}
@@ -73,9 +73,9 @@ function MediaKit() {
           </p>
           <div className="mt-8 grid sm:grid-cols-3 gap-4">
             {[
-              { label: "Instagram followers", value: "Coming soon" },
-              { label: "Average engagement rate", value: "Coming soon" },
-              { label: "Primary markets", value: "Coming soon" },
+              { label: "Instagram followers", value: "Niche community of Muslim family travellers" },
+              { label: "Average engagement rate", value: "Meaningful engagement over mass reach" },
+              { label: "Primary markets", value: "UAE, UK, US, Canada, and Southeast Asia" },
             ].map((s) => (
               <div
                 key={s.label}
