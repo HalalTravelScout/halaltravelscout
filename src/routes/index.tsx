@@ -21,7 +21,15 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://halaltravelscout.lovable.app/" },
     ],
-    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/" }],
+    links: [
+      { rel: "canonical", href: "https://halaltravelscout.lovable.app/" },
+      {
+        rel: "preload",
+        as: "image",
+        href: dioramaAsset.url,
+        fetchpriority: "high",
+      },
+    ],
   }),
   component: Home,
 });
