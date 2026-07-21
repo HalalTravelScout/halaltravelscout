@@ -5,13 +5,13 @@ import mapImg from "@/assets/map-objects.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About HalalTravelScout — An Insider Scout for Halal Family Travel" },
+      { title: "About HalalTravelScout — Halal Family Travel" },
       {
         name: "description",
         content:
           "HalalTravelScout is a long-term personal project by one traveler — verified halal food, prayer facilities, and family-friendly stops, not fast-launch content.",
       },
-      { property: "og:title", content: "About HalalTravelScout — An Insider Scout for Halal Family Travel" },
+      { property: "og:title", content: "About HalalTravelScout — Halal Family Travel" },
       {
         property: "og:description",
         content:
