@@ -75,7 +75,7 @@ function Home() {
           </div>
           <div className="order-1 md:order-2 relative">
             <img
-              src={dioramaAsset.url}
+              src={dioramaUrl}
               alt="A floating island diorama of iconic Muslim-friendly landmarks from around the world, with Halal Travel spelled in 3D letters"
               className="w-full h-auto object-contain drop-shadow-2xl"
               width={1200}
