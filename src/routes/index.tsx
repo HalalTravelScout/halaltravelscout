@@ -26,8 +26,9 @@ export const Route = createFileRoute("/")({
       {
         rel: "preload",
         as: "image",
-        href: dioramaAsset.url,
+        href: dioramaUrl,
         fetchpriority: "high",
+        type: "image/webp",
       },
     ],
   }),
