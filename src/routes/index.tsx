@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import dioramaAsset from "@/assets/home-diorama.png.asset.json";
 import foodImg from "@/assets/food-malaysia.jpg";
+const dioramaUrl = "/home-diorama.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,8 +26,9 @@ export const Route = createFileRoute("/")({
       {
         rel: "preload",
         as: "image",
-        href: dioramaAsset.url,
+        href: dioramaUrl,
         fetchpriority: "high",
+        type: "image/webp",
       },
     ],
   }),
@@ -74,7 +75,7 @@ function Home() {
           </div>
           <div className="order-1 md:order-2 relative">
             <img
-              src={dioramaAsset.url}
+              src={dioramaUrl}
               alt="A floating island diorama of iconic Muslim-friendly landmarks from around the world, with Halal Travel spelled in 3D letters"
               className="w-full h-auto object-contain drop-shadow-2xl"
               width={1200}
