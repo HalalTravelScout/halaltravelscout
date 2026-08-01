@@ -49,10 +49,10 @@ function Home() {
             <h1 className="wordmark text-5xl md:text-6xl lg:text-7xl">
               HalalTravelScout — Halal Family Travel, Verified
             </h1>
-            <p className="mt-5 text-lg md:text-xl text-foreground/80 italic">
+            <p className="mt-5 text-lg md:text-xl text-foreground italic">
               1 country a week, 1 tip a day — follow the journey.
             </p>
-            <p className="mt-5 max-w-xl md:mx-0 mx-auto text-foreground/80 text-base md:text-lg">
+            <p className="mt-5 max-w-xl md:mx-0 mx-auto text-foreground text-base md:text-lg">
               An insider scout for halal family travel. Verified food, prayer timing, and
               family-friendly stops — written honestly, checked carefully.
             </p>
