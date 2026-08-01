@@ -75,12 +75,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "HalalTravelScout" },
-      {
-        name: "description",
-        content:
-          "An insider scout for halal family travel — verified food, prayer timings, and family-friendly stops.",
-      },
       { name: "author", content: "HalalTravelScout" },
       { property: "og:site_name", content: "HalalTravelScout" },
       { name: "twitter:card", content: "summary_large_image" },
