@@ -34,7 +34,7 @@ function About() {
           <div>
             <p className="uppercase tracking-widest text-xs text-accent font-medium">About</p>
             <h1 className="mt-3 text-4xl md:text-5xl">A slow, careful travel project.</h1>
-            <p className="mt-6 text-lg text-foreground/85 leading-relaxed">
+            <p className="mt-6 text-lg text-foreground leading-relaxed">
               HalalTravelScout was built as a long-term personal project — not a
               fast-launch business. One traveler, a notebook, and a habit of asking
               twice before recommending anywhere.
@@ -55,7 +55,7 @@ function About() {
         <div className="container-prose py-20 md:py-24 grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl">What makes it different</h2>
-            <p className="mt-4 text-foreground/85 leading-relaxed">
+            <p className="mt-4 text-foreground leading-relaxed">
               Most "halal-friendly" content online repeats the same vague lists.
               HalalTravelScout takes the opposite approach: fewer places, more
               verification. If a restaurant is listed, its halal certification has
@@ -65,7 +65,7 @@ function About() {
           </div>
           <div>
             <h2 className="text-3xl">How I write</h2>
-            <p className="mt-4 text-foreground/85 leading-relaxed">
+            <p className="mt-4 text-foreground leading-relaxed">
               Warm, practical, first-person — the voice of a friend who's just come
               back from the trip. No hype, no "top 100" lists, no filler. If
               something didn't work, that's mentioned too.
@@ -77,7 +77,7 @@ function About() {
       <section className="container-prose py-20 md:py-24">
         <div className="max-w-3xl mx-auto rounded-2xl border border-accent/40 bg-card p-8 md:p-10">
           <p className="wordmark text-2xl text-accent">A quiet reminder</p>
-          <p className="mt-4 text-foreground/85 leading-relaxed">
+          <p className="mt-4 text-foreground leading-relaxed">
             Halal guidance on this site reflects personal research. For anything of
             religious weight, please verify with qualified scholars whose guidance
             you follow.

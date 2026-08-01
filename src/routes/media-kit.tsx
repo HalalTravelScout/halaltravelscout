@@ -33,7 +33,7 @@ function MediaKit() {
         <h1 className="mt-3 text-4xl md:text-5xl max-w-3xl">
           Partner with a trusted voice in halal family travel.
         </h1>
-        <p className="mt-6 max-w-2xl text-foreground/80 text-lg">
+        <p className="mt-6 max-w-2xl text-foreground text-lg">
           For hotels, destination management companies, and tourism boards serving
           Muslim family travellers — here's what HalalTravelScout offers.
         </p>
@@ -60,7 +60,7 @@ function MediaKit() {
         ].map((c) => (
           <div key={c.h} className="rounded-2xl border border-border/70 bg-card p-8">
             <h2 className="text-xl">{c.h}</h2>
-            <p className="mt-3 text-foreground/85 leading-relaxed">{c.p}</p>
+            <p className="mt-3 text-foreground leading-relaxed">{c.p}</p>
           </div>
         ))}
       </section>
@@ -68,7 +68,7 @@ function MediaKit() {
       <section className="bg-secondary/50 border-y border-border/60">
         <div className="container-prose py-16">
           <h2 className="text-2xl md:text-3xl">Audience snapshot</h2>
-          <p className="mt-2 text-muted-foreground text-sm">
+          <p className="mt-2 text-foreground text-sm">
             Live numbers — updated manually as the project grows.
           </p>
           <div className="mt-8 grid sm:grid-cols-3 gap-4">
@@ -94,7 +94,7 @@ function MediaKit() {
       <section className="container-prose py-20">
         <div className="rounded-3xl bg-primary text-primary-foreground p-10 md:p-14 text-center">
           <h2 className="text-3xl md:text-4xl text-primary-foreground">Let's talk</h2>
-          <p className="mt-4 max-w-xl mx-auto opacity-90">
+          <p className="mt-4 max-w-xl mx-auto">
             Partnership enquiries from hotels, DMCs, and tourism boards are always
             welcome. A short note about your destination and audience is the best
             starting point.

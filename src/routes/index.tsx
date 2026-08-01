@@ -49,10 +49,10 @@ function Home() {
             <h1 className="wordmark text-5xl md:text-6xl lg:text-7xl">
               HalalTravelScout — Halal Family Travel, Verified
             </h1>
-            <p className="mt-5 text-lg md:text-xl text-foreground/80 italic">
+            <p className="mt-5 text-lg md:text-xl text-foreground italic">
               1 country a week, 1 tip a day — follow the journey.
             </p>
-            <p className="mt-5 max-w-xl md:mx-0 mx-auto text-foreground/80 text-base md:text-lg">
+            <p className="mt-5 max-w-xl md:mx-0 mx-auto text-foreground text-base md:text-lg">
               An insider scout for halal family travel. Verified food, prayer timing, and
               family-friendly stops — written honestly, checked carefully.
             </p>
@@ -93,7 +93,7 @@ function Home() {
         <div className="max-w-3xl">
           <p className="uppercase tracking-widest text-xs text-accent font-medium">Hello, salaam</p>
           <h2 className="mt-3 text-3xl md:text-4xl">A quiet, careful travel companion for Muslim families.</h2>
-          <p className="mt-6 text-lg leading-relaxed text-foreground/85">
+          <p className="mt-6 text-lg leading-relaxed text-foreground">
             HalalTravelScout is a long-term personal project — one traveler, one notebook,
             one country at a time. The goal is simple: skip the vague "halal-friendly"
             labels and share what actually matters on the ground, so your family can
@@ -107,7 +107,7 @@ function Home() {
         <div className="container-prose py-20 md:py-24 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl">What "halal travel" means in practice</h2>
-            <p className="mt-5 text-foreground/85 leading-relaxed">
+            <p className="mt-5 text-foreground leading-relaxed">
               If you're new to the term, halal travel is simply travel planned so a Muslim
               family can move through the day with peace of mind. In practice, three things
               matter most:
@@ -117,7 +117,7 @@ function Home() {
                 <span className="mt-1 inline-block w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground grid place-items-center font-serif">1</span>
                 <div>
                   <p className="font-semibold">Certified halal food</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-foreground">
                     Restaurants and cafés with recognised halal certification — not just
                     "no pork on the menu."
                   </p>
@@ -127,7 +127,7 @@ function Home() {
                 <span className="mt-1 inline-block w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground grid place-items-center font-serif">2</span>
                 <div>
                   <p className="font-semibold">Prayer Timing</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-foreground">
                     Prayer timing, musallahs in malls and airports.
                   </p>
                 </div>
@@ -136,7 +136,7 @@ function Home() {
                 <span className="mt-1 inline-block w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground grid place-items-center font-serif">3</span>
                 <div>
                   <p className="font-semibold">Family-friendly, halal-verified stops</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-foreground">
                     Attractions and neighbourhoods that work for kids, elders, and modest
                     dress.
                   </p>
@@ -161,7 +161,7 @@ function Home() {
       <section className="container-prose py-20 md:py-24">
         <div className="max-w-3xl mx-auto rounded-2xl border border-accent/40 bg-card p-8 md:p-10 text-center">
           <p className="wordmark text-2xl text-accent">A note on trust</p>
-          <p className="mt-4 text-foreground/85 leading-relaxed">
+          <p className="mt-4 text-foreground leading-relaxed">
             Everything shared here reflects personal research and firsthand scouting. For
             anything of religious significance, please verify with qualified scholars whose
             guidance you follow. This site is a starting point — not a fatwa.
@@ -173,7 +173,7 @@ function Home() {
       <section className="container-prose pb-24">
         <div className="rounded-3xl bg-primary text-primary-foreground p-10 md:p-14 text-center">
           <h2 className="text-3xl md:text-4xl text-primary-foreground">Follow the journey</h2>
-          <p className="mt-4 max-w-xl mx-auto opacity-90">
+          <p className="mt-4 max-w-xl mx-auto">
             One country a week. One tip a day. Real notes from real trips.
           </p>
           <a
