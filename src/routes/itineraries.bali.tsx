@@ -153,7 +153,7 @@ function BaliGuide() {
         <h1 className="mt-3 text-4xl md:text-5xl max-w-3xl">
           Bali Halal Food & Family Travel Guide
         </h1>
-        <p className="mt-6 max-w-2xl text-foreground/80 text-lg">
+        <p className="mt-6 max-w-2xl text-foreground text-lg">
           Indonesia is a Muslim-majority country, but Bali is Hindu-majority — so a halal-conscious trip
           takes a little more planning. This guide covers verified halal restaurants, prayer spaces,
           family-friendly stops, and a practical 3-day itinerary.
@@ -174,19 +174,19 @@ function BaliGuide() {
           <div className="space-y-6">
             <div className="rounded-2xl border border-border/70 bg-card p-6 md:p-8 shadow-sm">
               <h2 className="text-xl md:text-2xl">Sample Prayer Times — Bali (Denpasar)</h2>
-              <p className="mt-1 text-sm text-foreground/70">Saturday, 15 March 2026. Times shift through the year; confirm with a local app.</p>
+              <p className="mt-1 text-sm text-foreground">Saturday, 15 March 2026. Times shift through the year; confirm with a local app.</p>
               <dl className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm">
                 {prayerTimes.map((t) => (
                   <div key={t.name} className="min-w-[4.5rem]">
                     <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">{t.name}</dt>
-                    <dd className="mt-1 text-foreground/90 font-medium">{t.time}</dd>
+                    <dd className="mt-1 text-foreground font-medium">{t.time}</dd>
                   </div>
                 ))}
               </dl>
             </div>
             <div className="rounded-2xl border border-border/70 bg-card p-6 md:p-8 shadow-sm">
               <h2 className="text-xl md:text-2xl">Where to stay</h2>
-              <p className="mt-3 text-foreground/85 leading-relaxed">
+              <p className="mt-3 text-foreground leading-relaxed">
                 Nusa Dua, Seminyak, and Sanur are the most practical bases for Muslim families.
                 Nusa Dua in particular has the highest concentration of halal-certified resort restaurants
                 and the calmest beaches for young children.
@@ -202,11 +202,11 @@ function BaliGuide() {
               <div key={r.name} className="rounded-xl border border-border/70 bg-card p-6 shadow-sm">
                 <h3 className="text-lg md:text-xl">{r.name}</h3>
                 <p className="mt-1 text-sm text-accent font-medium">{r.area}</p>
-                <p className="mt-3 text-foreground/85 leading-relaxed text-sm">{r.note}</p>
+                <p className="mt-3 text-foreground leading-relaxed text-sm">{r.note}</p>
               </div>
             ))}
           </div>
-          <p className="text-sm text-foreground/70">
+          <p className="text-sm text-foreground">
             Always double-check current halal certification before ordering. Menus and certifications change,
             and "no pork" does not always mean fully halal.
           </p>
@@ -219,7 +219,7 @@ function BaliGuide() {
               <div key={p.name} className="rounded-xl border border-border/70 bg-card p-6 shadow-sm">
                 <h3 className="text-lg md:text-xl">{p.name}</h3>
                 <p className="mt-1 text-sm text-accent font-medium">{p.area}</p>
-                <p className="mt-3 text-foreground/85 leading-relaxed text-sm">{p.note}</p>
+                <p className="mt-3 text-foreground leading-relaxed text-sm">{p.note}</p>
               </div>
             ))}
           </div>
@@ -231,7 +231,7 @@ function BaliGuide() {
             {familyStops.map((s) => (
               <div key={s.name} className="rounded-xl border border-border/70 bg-card p-6 shadow-sm">
                 <h3 className="text-lg md:text-xl">{s.name}</h3>
-                <p className="mt-3 text-foreground/85 leading-relaxed text-sm">{s.note}</p>
+                <p className="mt-3 text-foreground leading-relaxed text-sm">{s.note}</p>
               </div>
             ))}
           </div>
@@ -246,11 +246,11 @@ function BaliGuide() {
                 <dl className="mt-4 grid sm:grid-cols-2 gap-4 text-sm">
                   <div>
                     <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">Halal food</dt>
-                    <dd className="mt-1 text-foreground/85 leading-relaxed">{d.food}</dd>
+                    <dd className="mt-1 text-foreground leading-relaxed">{d.food}</dd>
                   </div>
                   <div>
                     <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">Family</dt>
-                    <dd className="mt-1 text-foreground/85 leading-relaxed">{d.family}</dd>
+                    <dd className="mt-1 text-foreground leading-relaxed">{d.family}</dd>
                   </div>
                 </dl>
               </div>
@@ -261,7 +261,7 @@ function BaliGuide() {
         <div className="rounded-2xl border border-border/70 bg-card p-8 shadow-sm text-center">
           <p className="uppercase tracking-widest text-xs text-accent font-medium">More itineraries</p>
           <h2 className="mt-3 text-2xl md:text-3xl">See all sample trips</h2>
-          <p className="mt-3 text-foreground/80 max-w-xl mx-auto">
+          <p className="mt-3 text-foreground max-w-xl mx-auto">
             Compare Bali with Kuala Lumpur and Istanbul in our fixed, evergreen sample itineraries page.
           </p>
           <Link

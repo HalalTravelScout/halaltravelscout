@@ -218,7 +218,7 @@ function ItinerariesIndex() {
         <h1 className="mt-3 text-4xl md:text-5xl max-w-3xl">
           Example trips to inspire your planning.
         </h1>
-        <p className="mt-6 max-w-2xl text-foreground/80 text-lg">
+        <p className="mt-6 max-w-2xl text-foreground text-lg">
           These aren't a growing blog archive — they're fixed, illustrative itineraries.
           Use them as a shape for your own family trip. Verify current halal certifications
           and opening hours before you book.
@@ -235,7 +235,7 @@ function ItinerariesIndex() {
                   <h2 className="text-xl md:text-2xl">
                     {pt.city} — {pt.date}
                   </h2>
-                  <p className="mt-1 text-sm text-foreground/70">
+                  <p className="mt-1 text-sm text-foreground">
                     Times shift through the year; use a local prayer-time app to confirm.
                   </p>
                 </div>
@@ -243,7 +243,7 @@ function ItinerariesIndex() {
                   {pt.times.map((t) => (
                     <div key={t.name} className="min-w-[4.5rem]">
                       <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">{t.name}</dt>
-                      <dd className="mt-1 text-foreground/90 font-medium">{t.time}</dd>
+                      <dd className="mt-1 text-foreground font-medium">{t.time}</dd>
                     </div>
                   ))}
                 </dl>
@@ -269,7 +269,7 @@ function ItinerariesIndex() {
                     {it.country}
                   </p>
                   <h2 className="mt-1 text-2xl md:text-3xl">{it.title}</h2>
-                  <p className="mt-3 text-foreground/80 leading-relaxed">{it.intro}</p>
+                  <p className="mt-3 text-foreground leading-relaxed">{it.intro}</p>
                   {it.id === "bali" && (
                     <Link
                       to="/itineraries/bali"
@@ -291,11 +291,11 @@ function ItinerariesIndex() {
                     <dl className="mt-4 grid sm:grid-cols-2 gap-4 text-sm">
                       <div>
                         <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">Halal food</dt>
-                        <dd className="mt-1 text-foreground/85 leading-relaxed">{d.food}</dd>
+                        <dd className="mt-1 text-foreground leading-relaxed">{d.food}</dd>
                       </div>
                       <div>
                         <dt className="uppercase tracking-wider text-[10px] text-accent font-semibold">Family</dt>
-                        <dd className="mt-1 text-foreground/85 leading-relaxed">{d.family}</dd>
+                        <dd className="mt-1 text-foreground leading-relaxed">{d.family}</dd>
                       </div>
                     </dl>
                   </div>

@@ -25,7 +25,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               <Link
                 key={n.to}
                 to={n.to}
-                className="text-foreground/80 hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
                 activeProps={{ className: "text-primary font-medium" }}
                 activeOptions={{ exact: n.to === "/" }}
               >
@@ -54,7 +54,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                   key={n.to}
                   to={n.to}
                   onClick={() => setOpen(false)}
-                  className="py-2 text-foreground/80"
+                  className="py-2 text-foreground"
                   activeProps={{ className: "text-primary font-medium" }}
                   activeOptions={{ exact: n.to === "/" }}
                 >
@@ -69,7 +69,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <main className="flex-1">{children}</main>
 
       <footer className="mt-24 border-t border-border/70 bg-secondary/40">
-        <div className="container-prose py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-muted-foreground">
+        <div className="container-prose py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-foreground">
           <div className="flex items-center gap-3">
             <img src={logoAsset.url} alt="" aria-hidden="true" className="h-10 w-10 object-contain" width={40} height={40} />
             <div>

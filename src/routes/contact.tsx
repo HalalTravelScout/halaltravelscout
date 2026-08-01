@@ -54,7 +54,7 @@ function Contact() {
         <p className="uppercase tracking-widest text-xs text-accent font-medium">Contact</p>
         <h1 className="mt-3 text-4xl md:text-5xl max-w-3xl">Contact HalalTravelScout</h1>
         <p className="mt-3 wordmark text-2xl text-accent">Al salamo Alaikom.</p>
-        <p className="mt-6 max-w-xl text-foreground/80 text-lg">
+        <p className="mt-6 max-w-xl text-foreground text-lg">
           Questions, corrections, partnership ideas, or a place you'd love scouted —
           the door is open.
         </p>
@@ -70,7 +70,7 @@ function Contact() {
             <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
               halaltravelscout@hotmail.com
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm text-foreground">
               Best for partnerships, corrections, and longer notes.
             </p>
           </a>
@@ -87,7 +87,7 @@ function Contact() {
             <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
               @halaltravelscout
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm text-foreground">
               Follow the journey — 1 country a week, 1 tip a day.
             </p>
           </a>
@@ -102,10 +102,10 @@ function Contact() {
             <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
               Mohamed Mohsen Al Amoodi
             </p>
-            <p className="mt-1 wordmark text-xl text-primary/80 group-hover:text-accent transition">
+            <p className="mt-1 wordmark text-xl text-primary group-hover:text-accent transition">
               +971 50 771 0072
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm text-foreground">
               Best for quick questions or urgent trip planning.
             </p>
           </a>
@@ -122,7 +122,7 @@ function Contact() {
             <p className="mt-3 wordmark text-2xl text-primary group-hover:text-accent transition">
               Mohamed Al Amoodi
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm text-foreground">
               Follow our journey and connect professionally.
             </p>
           </a>
