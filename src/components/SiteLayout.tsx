@@ -16,11 +16,16 @@ export function SiteLayout({ children }: { children: ReactNode }) {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="border-b border-border/70 bg-background/85 backdrop-blur sticky top-0 z-40">
         <div className="container-prose flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <img src={logoAsset.url} alt="HalalTravelScout" className="h-11 w-11 object-contain" width={44} height={44} />
+          <Link
+            to="/"
+            aria-label="HalalTravelScout — go to homepage"
+            className="flex items-center gap-3"
+            onClick={() => setOpen(false)}
+          >
+            <img src={logoAsset.url} alt="" aria-hidden="true" className="h-11 w-11 object-contain" width={44} height={44} />
             <span className="wordmark text-xl md:text-2xl leading-none">HalalTravelScout</span>
           </Link>
-          <nav className="hidden md:flex items-center gap-7 text-sm">
+          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-7 text-sm">
             {nav.map((n) => (
               <Link
                 key={n.to}
@@ -34,12 +39,14 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             ))}
           </nav>
           <button
-            aria-label="Toggle menu"
+            type="button"
+            aria-label={open ? "Close main menu" : "Open main menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
             className="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-md border border-border"
             onClick={() => setOpen((o) => !o)}
           >
-            <span className="sr-only">Menu</span>
-            <div className="flex flex-col gap-1">
+            <div aria-hidden="true" className="flex flex-col gap-1">
               <span className="block w-4 h-0.5 bg-foreground" />
               <span className="block w-4 h-0.5 bg-foreground" />
               <span className="block w-4 h-0.5 bg-foreground" />
