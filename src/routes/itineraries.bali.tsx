@@ -266,6 +266,7 @@ function BaliGuide() {
           </p>
           <Link
             to="/itineraries"
+            aria-label="View all sample halal travel itineraries"
             className="inline-block mt-6 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
           >
             View all itineraries
