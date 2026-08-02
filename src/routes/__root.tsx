@@ -51,6 +51,8 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
+            type="button"
+            aria-label="Try loading this page again"
             onClick={() => {
               router.invalidate();
               reset();
@@ -61,6 +63,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           </button>
           <a
             href="/"
+            aria-label="Go to HalalTravelScout homepage"
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
           >
             Go home
