@@ -101,6 +101,7 @@ function MediaKit() {
           </p>
           <a
             href="mailto:halaltravelscout@hotmail.com"
+            aria-label="Email partnership enquiries to halaltravelscout@hotmail.com"
             className="mt-8 inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition"
           >
             halaltravelscout@hotmail.com
