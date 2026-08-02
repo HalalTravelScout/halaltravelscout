@@ -117,6 +117,7 @@ function Contact() {
             href="https://www.linkedin.com/in/mohamed-al-amoodi-93a2a7422"
             target="_blank"
             rel="noreferrer"
+            aria-label="Connect with Mohamed Al Amoodi on LinkedIn (opens in a new tab)"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
