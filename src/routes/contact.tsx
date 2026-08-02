@@ -80,6 +80,7 @@ function Contact() {
             href="https://instagram.com/halaltravelscout"
             target="_blank"
             rel="noreferrer"
+            aria-label="Follow @halaltravelscout on Instagram (opens in a new tab)"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
