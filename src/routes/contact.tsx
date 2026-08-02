@@ -96,6 +96,7 @@ function Contact() {
 
           <a
             href="tel:+971507710072"
+            aria-label="Call Mohamed Mohsen Al Amoodi on +971 50 771 0072"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
