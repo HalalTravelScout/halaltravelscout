@@ -273,9 +273,10 @@ function ItinerariesIndex() {
                   {it.id === "bali" && (
                     <Link
                       to="/itineraries/bali"
+                      aria-label="Read the full Bali halal travel guide"
                       className="inline-block mt-4 text-primary font-medium hover:text-accent transition-colors"
                     >
-                      Read the full Bali guide →
+                      Read the full Bali guide <span aria-hidden="true">→</span>
                     </Link>
                   )}
                 </div>
