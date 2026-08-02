@@ -182,6 +182,7 @@ function Home() {
             href="https://instagram.com/halaltravelscout"
             target="_blank"
             rel="noreferrer"
+            aria-label="Follow @halaltravelscout on Instagram (opens in a new tab)"
             className="mt-8 inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition"
           >
             @halaltravelscout
