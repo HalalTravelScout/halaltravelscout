@@ -59,6 +59,7 @@ function Home() {
             <div className="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
               <Link
                 to="/itineraries"
+                aria-label="View sample halal family travel itineraries"
                 className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition"
               >
                 View sample itineraries
@@ -67,6 +68,7 @@ function Home() {
                 href="https://instagram.com/halaltravelscout"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Follow HalalTravelScout on Instagram (opens in a new tab)"
                 className="inline-flex items-center rounded-full border border-primary/40 text-primary px-6 py-3 text-sm font-medium hover:bg-primary/5 transition"
               >
                 Follow @halaltravelscout on Instagram
@@ -180,6 +182,7 @@ function Home() {
             href="https://instagram.com/halaltravelscout"
             target="_blank"
             rel="noreferrer"
+            aria-label="Follow @halaltravelscout on Instagram (opens in a new tab)"
             className="mt-8 inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition"
           >
             @halaltravelscout

@@ -62,6 +62,7 @@ function Contact() {
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
           <a
             href="mailto:halaltravelscout@hotmail.com"
+            aria-label="Email HalalTravelScout at halaltravelscout@hotmail.com"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
@@ -79,6 +80,7 @@ function Contact() {
             href="https://instagram.com/halaltravelscout"
             target="_blank"
             rel="noreferrer"
+            aria-label="Follow @halaltravelscout on Instagram (opens in a new tab)"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
@@ -94,6 +96,7 @@ function Contact() {
 
           <a
             href="tel:+971507710072"
+            aria-label="Call Mohamed Mohsen Al Amoodi on +971 50 771 0072"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
@@ -114,6 +117,7 @@ function Contact() {
             href="https://www.linkedin.com/in/mohamed-al-amoodi-93a2a7422"
             target="_blank"
             rel="noreferrer"
+            aria-label="Connect with Mohamed Al Amoodi on LinkedIn (opens in a new tab)"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
