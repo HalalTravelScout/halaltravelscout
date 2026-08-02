@@ -54,8 +54,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </button>
         </div>
         {open && (
-          <div className="md:hidden border-t border-border">
-            <nav className="container-prose flex flex-col py-3 gap-1">
+          <div id="mobile-menu" className="md:hidden border-t border-border">
+            <nav aria-label="Mobile navigation" className="container-prose flex flex-col py-3 gap-1">
               {nav.map((n) => (
                 <Link
                   key={n.to}
