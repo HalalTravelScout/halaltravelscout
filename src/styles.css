@@ -82,6 +82,30 @@
     letter-spacing: -0.01em;
     color: var(--teal-deep);
   }
+
+  /* Visible keyboard focus for all interactive elements */
+  a, button, [role="button"], input, select, textarea, summary, [tabindex]:not([tabindex="-1"]) {
+    outline-color: var(--color-ring);
+  }
+  a:focus-visible,
+  button:focus-visible,
+  [role="button"]:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  summary:focus-visible,
+  [tabindex]:not([tabindex="-1"]):focus-visible {
+    outline: 3px solid var(--color-ring);
+    outline-offset: 2px;
+    border-radius: 0.25rem;
+  }
+  /* On dark/teal surfaces the gold ring stays visible */
+  .bg-primary a:focus-visible,
+  .bg-primary button:focus-visible,
+  [data-on-dark] a:focus-visible,
+  [data-on-dark] button:focus-visible {
+    outline-color: var(--gold);
+  }
 }
 
 @utility wordmark {
