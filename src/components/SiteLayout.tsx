@@ -89,6 +89,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               href="https://instagram.com/halaltravelscout"
               target="_blank"
               rel="noreferrer"
+              aria-label="@halaltravelscout on Instagram (opens in a new tab)"
               className="text-primary hover:text-accent transition-colors"
             >
               @halaltravelscout on Instagram
