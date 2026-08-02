@@ -62,6 +62,7 @@ function Contact() {
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
           <a
             href="mailto:halaltravelscout@hotmail.com"
+            aria-label="Email HalalTravelScout at halaltravelscout@hotmail.com"
             className="group rounded-2xl border border-border/70 bg-card p-8 hover:border-accent transition"
           >
             <p className="uppercase tracking-widest text-[10px] text-accent font-semibold">
