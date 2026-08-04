@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import klDiorama from "@/assets/kl-diorama.png.asset.json";
-import istanbulDiorama from "@/assets/istanbul-diorama.png.asset.json";
-import baliDiorama from "@/assets/bali-diorama.png.asset.json";
+import klDiorama from "@/assets/kl-diorama.png";
+import istanbulDiorama from "@/assets/istanbul-diorama.png";
+import baliDiorama from "@/assets/bali-diorama.png";
 
 export const Route = createFileRoute("/itineraries/")({
   head: () => ({
@@ -122,7 +122,7 @@ const itineraries: Itinerary[] = [
     title: "5-Day Family Itinerary: Kuala Lumpur",
     intro:
       "Kuala Lumpur is arguably the easiest big city in the world for a Muslim family. JAKIM-certified halal food is everywhere, mosques dot most neighbourhoods, and mall musallahs are common.",
-    image: klDiorama.url,
+    image: klDiorama,
     days: [
       {
         title: "Day 1 — Arrive & settle in Bukit Bintang",
@@ -158,7 +158,7 @@ const itineraries: Itinerary[] = [
     title: "4-Day Family Itinerary: Istanbul",
     intro:
       "Istanbul is layered, walkable, and quietly generous to Muslim families. Meat is generally halal by default in local restaurants, and prayer never feels far away.",
-    image: istanbulDiorama.url,
+    image: istanbulDiorama,
     days: [
       {
         title: "Day 1 — Sultanahmet on foot",
@@ -189,7 +189,7 @@ const itineraries: Itinerary[] = [
     title: "3-Day Family Itinerary: Bali (halal-conscious)",
     intro:
       "Bali requires more planning than KL or Istanbul, but a halal-conscious trip is very doable — especially staying near Nusa Dua, Seminyak, or Sanur where certified halal restaurants and prayer rooms are easier to find.",
-    image: baliDiorama.url,
+    image: baliDiorama,
     days: [
       {
         title: "Day 1 — Nusa Dua base & beach day",
