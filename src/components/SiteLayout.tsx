@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import logoAsset from "@/assets/hts-logo.png.asset.json";
+import logoAsset from "@/assets/hts-logo.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -22,7 +22,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             className="flex items-center gap-3"
             onClick={() => setOpen(false)}
           >
-            <img src={logoAsset.url} alt="" aria-hidden="true" className="h-11 w-11 object-contain" width={44} height={44} />
+            <img src={logoAsset} alt="" aria-hidden="true" className="h-11 w-11 object-contain" width={44} height={44} />
             <span className="wordmark text-xl md:text-2xl leading-none">HalalTravelScout</span>
           </Link>
           <nav aria-label="Main navigation" className="hidden md:flex items-center gap-7 text-sm">
@@ -78,7 +78,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <footer className="mt-24 border-t border-border/70 bg-secondary/40">
         <div className="container-prose py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-sm text-foreground">
           <div className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="" aria-hidden="true" className="h-10 w-10 object-contain" width={40} height={40} />
+            <img src={logoAsset} alt="" aria-hidden="true" className="h-10 w-10 object-contain" width={40} height={40} />
             <div>
               <div className="wordmark text-lg leading-none">HalalTravelScout</div>
               <p className="mt-1 text-xs tracking-widest uppercase text-accent">Travel · Discover · Verify</p>
