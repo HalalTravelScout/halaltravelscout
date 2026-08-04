@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import baliDiorama from "@/assets/bali-diorama.png.asset.json";
+import baliDiorama from "@/assets/bali-diorama.png";
 
 export const Route = createFileRoute("/itineraries/bali")({
   head: () => ({
@@ -164,7 +164,7 @@ function BaliGuide() {
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="rounded-2xl border border-border/60 overflow-hidden shadow-lg">
             <img
-              src={baliDiorama.url}
+              src={baliDiorama}
               alt="Bali floating island diorama showing Pura Ulun Danu Bratan temple and coastline"
               width={1024}
               height={1024}
