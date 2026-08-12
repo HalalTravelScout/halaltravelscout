@@ -35,14 +35,25 @@ function About() {
             <p className="uppercase tracking-widest text-xs text-accent font-medium">About</p>
             <h1 className="mt-3 text-4xl md:text-5xl">A slow, careful travel project.</h1>
             <p className="mt-6 text-lg text-foreground leading-relaxed">
-              I'm Mohamed Mohsen Al Amoodi, and travel has been a long-running
-              interest of mine for years. I started HalalTravelScout after noticing
-              the same gap over and over: most "halal-friendly" travel content online
-              is vague and unverified, recycling the same generic lists without anyone
-              actually checking anything. I wanted something more trustworthy for
-              Muslim families — especially families here in the GCC — who want to
-              travel with real confidence instead of guesswork.
+              I'm Mohamed Mohsen Al Amoodi, and I've spent years traveling — most of
+              it as part of a large Gulf family, the way most of us actually travel
+              here. Multiple generations, different comfort needs, and a rhythm to the
+              trip that most travel content simply doesn't understand.
             </p>
+            <p className="mt-4 text-lg text-foreground leading-relaxed">
+              That's really why HalalTravelScout exists. Most travel guidance online is
+              written for a different kind of traveler entirely — a couple, a solo
+              backpacker, a nuclear family of four. It doesn't account for how a GCC
+              family actually moves through a trip: who needs rest when, what privacy
+              looks like, how meals work when everyone's eating together, what
+              "family-friendly" really means when the family is twelve people, not
+              four.
+            </p>
+            <p className="mt-4 text-lg text-foreground leading-relaxed">
+              I wanted to build something that starts from that understanding first —
+              not as an afterthought, but as the actual starting point.
+            </p>
+
 
           </div>
           <img
