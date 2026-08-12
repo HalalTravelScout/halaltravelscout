@@ -18,9 +18,9 @@ export const Route = createFileRoute("/itineraries/")({
         content: "Example halal family trips for Kuala Lumpur, Istanbul, and Bali.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://halaltravelscout.lovable.app/itineraries" },
+      { property: "og:url", content: "https://halaltravelscout.com/itineraries" },
     ],
-    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/itineraries" }],
+    links: [{ rel: "canonical", href: "https://halaltravelscout.com/itineraries" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/itineraries/")({
                 "@type": "Article",
                 headline: "5-Day Family Itinerary: Kuala Lumpur",
                 about: "Halal family travel in Kuala Lumpur, Malaysia",
-                url: "https://halaltravelscout.lovable.app/itineraries#kl",
+                url: "https://halaltravelscout.com/itineraries#kl",
               },
             },
             {
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/itineraries/")({
                 "@type": "Article",
                 headline: "4-Day Family Itinerary: Istanbul",
                 about: "Halal family travel in Istanbul, Turkey",
-                url: "https://halaltravelscout.lovable.app/itineraries#ist",
+                url: "https://halaltravelscout.com/itineraries#ist",
               },
             },
             {
@@ -56,7 +56,7 @@ export const Route = createFileRoute("/itineraries/")({
                 "@type": "Article",
                 headline: "3-Day Family Itinerary: Bali",
                 about: "Halal-conscious family travel in Bali, Indonesia",
-                url: "https://halaltravelscout.lovable.app/itineraries#bali",
+                url: "https://halaltravelscout.com/itineraries#bali",
               },
             },
           ],

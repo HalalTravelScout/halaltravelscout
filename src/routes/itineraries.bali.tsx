@@ -21,9 +21,9 @@ export const Route = createFileRoute("/itineraries/bali")({
           "Verified halal restaurants, prayer spaces, and family-friendly stops for a halal-conscious trip to Bali.",
       },
       { property: "og:type", content: "article" },
-      { property: "og:url", content: "https://halaltravelscout.lovable.app/itineraries/bali" },
+      { property: "og:url", content: "https://halaltravelscout.com/itineraries/bali" },
     ],
-    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/itineraries/bali" }],
+    links: [{ rel: "canonical", href: "https://halaltravelscout.com/itineraries/bali" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/itineraries/bali")({
           "@type": "Article",
           headline: "Bali Halal Food & Family Travel Guide",
           about: "Halal-conscious family travel in Bali, Indonesia",
-          url: "https://halaltravelscout.lovable.app/itineraries/bali",
+          url: "https://halaltravelscout.com/itineraries/bali",
           author: {
             "@type": "Person",
             name: "Mohamed Mohsen Al Amoodi",
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/itineraries/bali")({
           publisher: {
             "@type": "Organization",
             name: "HalalTravelScout",
-            url: "https://halaltravelscout.lovable.app",
+            url: "https://halaltravelscout.com",
           },
         }),
       },

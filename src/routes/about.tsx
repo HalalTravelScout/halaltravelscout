@@ -18,9 +18,9 @@ export const Route = createFileRoute("/about")({
           "A long-term personal project built on verified, checkable information — one traveler, one honest voice.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://halaltravelscout.lovable.app/about" },
+      { property: "og:url", content: "https://halaltravelscout.com/about" },
     ],
-    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/about" }],
+    links: [{ rel: "canonical", href: "https://halaltravelscout.com/about" }],
 
   }),
   component: About,

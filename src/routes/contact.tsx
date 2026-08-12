@@ -16,9 +16,9 @@ export const Route = createFileRoute("/contact")({
         content: "Email, phone, Instagram and LinkedIn — the ways to reach HalalTravelScout.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://halaltravelscout.lovable.app/contact" },
+      { property: "og:url", content: "https://halaltravelscout.com/contact" },
     ],
-    links: [{ rel: "canonical", href: "https://halaltravelscout.lovable.app/contact" }],
+    links: [{ rel: "canonical", href: "https://halaltravelscout.com/contact" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/contact")({
           jobTitle: "Founder, HalalTravelScout",
           email: "halaltravelscout@hotmail.com",
           telephone: "+971507710072",
-          url: "https://halaltravelscout.lovable.app/contact",
+          url: "https://halaltravelscout.com/contact",
           sameAs: [
             "https://instagram.com/halaltravelscout",
             "https://www.linkedin.com/in/mohamed-al-amoodi-93a2a7422",
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/contact")({
           worksFor: {
             "@type": "Organization",
             name: "HalalTravelScout",
-            url: "https://halaltravelscout.lovable.app",
+            url: "https://halaltravelscout.com",
           },
         }),
       },
