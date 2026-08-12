@@ -35,10 +35,15 @@ function About() {
             <p className="uppercase tracking-widest text-xs text-accent font-medium">About</p>
             <h1 className="mt-3 text-4xl md:text-5xl">A slow, careful travel project.</h1>
             <p className="mt-6 text-lg text-foreground leading-relaxed">
-              HalalTravelScout was built as a long-term personal project — not a
-              fast-launch business. One traveler, a notebook, and a habit of asking
-              twice before recommending anywhere.
+              I'm Mohamed Mohsen Al Amoodi, and travel has been a long-running
+              interest of mine for years. I started HalalTravelScout after noticing
+              the same gap over and over: most "halal-friendly" travel content online
+              is vague and unverified, recycling the same generic lists without anyone
+              actually checking anything. I wanted something more trustworthy for
+              Muslim families — especially families here in the GCC — who want to
+              travel with real confidence instead of guesswork.
             </p>
+
           </div>
           <img
             src={mapImg}
@@ -52,7 +57,7 @@ function About() {
       </section>
 
       <section className="bg-secondary/50 border-y border-border/60">
-        <div className="container-prose py-20 md:py-24 grid md:grid-cols-2 gap-12">
+        <div className="container-prose py-20 md:py-24 grid md:grid-cols-3 gap-12">
           <div>
             <h2 className="text-3xl">What makes it different</h2>
             <p className="mt-4 text-foreground leading-relaxed">
@@ -71,8 +76,19 @@ function About() {
               something didn't work, that's mentioned too.
             </p>
           </div>
+          <div>
+            <h2 className="text-3xl">How things are checked</h2>
+            <p className="mt-4 text-foreground leading-relaxed">
+              Important claims carry a label saying how they were confirmed:
+              personally verified on the ground, confirmed directly with the venue or
+              supplier, or confirmed through an official certifying body — with the
+              source and date noted where it matters. A fuller explanation of the
+              verification method is on its way.
+            </p>
+          </div>
         </div>
       </section>
+
 
       <section className="container-prose py-20 md:py-24">
         <div className="max-w-3xl mx-auto rounded-2xl border border-accent/40 bg-card p-8 md:p-10">
