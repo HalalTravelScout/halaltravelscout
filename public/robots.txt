@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://halaltravelscout.lovable.app/sitemap.xml
+Sitemap: https://halaltravelscout.com/sitemap.xml
 

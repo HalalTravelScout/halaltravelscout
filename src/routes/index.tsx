@@ -19,10 +19,10 @@ export const Route = createFileRoute("/")({
           "Insider halal family travel guides with verified restaurants, prayer timings, and family-friendly stops in Malaysia, Istanbul, Bali and beyond.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://halaltravelscout.lovable.app/" },
+      { property: "og:url", content: "https://halaltravelscout.com/" },
     ],
     links: [
-      { rel: "canonical", href: "https://halaltravelscout.lovable.app/" },
+      { rel: "canonical", href: "https://halaltravelscout.com/" },
       {
         rel: "preload",
         as: "image",

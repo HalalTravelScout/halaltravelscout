@@ -56,7 +56,7 @@ Build this as a clean, professional, low-maintenance static site. All written co
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://halaltravelscout.lovable.app
+**Live app**: https://halaltravelscout.com
 
 ## Build with Lovable
 

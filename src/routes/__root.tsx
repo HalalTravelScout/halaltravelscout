@@ -104,14 +104,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             {
               "@type": "Organization",
               name: "HalalTravelScout",
-              url: "https://halaltravelscout.lovable.app",
+              url: "https://halaltravelscout.com",
               logo: "https://storage.googleapis.com/gpt-engineer-file-uploads/hkC7Vxe0phXyRNyEZXKFk2rzZAf2/social-images/social-1784174849652-HalalTravel_General_Diorama_v2.webp",
               sameAs: ["https://instagram.com/halaltravelscout"],
             },
             {
               "@type": "WebSite",
               name: "HalalTravelScout",
-              url: "https://halaltravelscout.lovable.app",
+              url: "https://halaltravelscout.com",
             },
           ],
         }),
