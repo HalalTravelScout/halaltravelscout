@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import logoAsset from "@/assets/hts-logo.png";
+import htnBadge from "@/assets/htn-member-badge.png";
 
 const nav = [
   { to: "/", label: "Home" },
