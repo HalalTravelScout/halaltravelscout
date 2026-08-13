@@ -75,7 +75,7 @@ function MediaKit() {
             {[
               { label: "Instagram followers", value: "Niche community of Muslim family travellers" },
               { label: "Average engagement rate", value: "Meaningful engagement over mass reach" },
-              { label: "Primary markets", value: "Malaysia, Indonesia, Kazakhstan, UAE, Saudi Arabia, Qatar, Maldives, and other Islamic destinations" },
+              { label: "Primary markets", value: "Malaysia, Kazakhstan, Maldives and other Islamic countries" },
             ].map((s) => (
               <div
                 key={s.label}
