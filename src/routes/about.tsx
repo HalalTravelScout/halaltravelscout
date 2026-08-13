@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
+import { VerificationBadge } from "@/components/VerificationBadge";
 import mapImg from "@/assets/map-objects.jpg";
 
 export const Route = createFileRoute("/about")({
@@ -68,7 +69,7 @@ function About() {
       </section>
 
       <section className="bg-secondary/50 border-y border-border/60">
-        <div className="container-prose py-20 md:py-24 grid md:grid-cols-3 gap-12">
+        <div className="container-prose py-20 md:py-24 grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl">What makes it different</h2>
             <p className="mt-4 text-foreground leading-relaxed">
@@ -87,15 +88,43 @@ function About() {
               something didn't work, that's mentioned too.
             </p>
           </div>
-          <div>
-            <h2 className="text-3xl">How things are checked</h2>
-            <p className="mt-4 text-foreground leading-relaxed">
-              Important claims carry a label saying how they were confirmed:
-              personally verified on the ground, confirmed directly with the venue or
-              supplier, or confirmed through an official certifying body — with the
-              source and date noted where it matters. A fuller explanation of the
-              verification method is on its way.
+        </div>
+      </section>
+
+      <section className="container-prose py-20 md:py-24">
+        <div className="max-w-3xl">
+          <h2 className="text-3xl md:text-4xl">How things are checked</h2>
+          <p className="mt-6 text-lg text-foreground leading-relaxed">
+            Most of what you'll find here comes from places I've actually been — I've
+            personally traveled to the majority of the destinations covered on
+            HalalTravelScout, and halal status isn't something I take for granted. On
+            the ground, I ask directly: at restaurants, at attractions, at hotels — is
+            this halal, is this not, what should a Muslim family actually expect here.
+          </p>
+          <p className="mt-4 text-lg text-foreground leading-relaxed">
+            For the small number of places I haven't personally visited yet, the
+            content is built from careful research using reputable, official sources
+            — and I review every single piece of content myself before it's
+            published, checking it against what I know and can verify, rather than
+            publishing anything on autopilot.
+          </p>
+          <p className="mt-4 text-lg text-foreground leading-relaxed">
+            As I continue working with the Halal Travel Network, I'll also be able to
+            draw on additional verified industry information — I'll note clearly when
+            that becomes part of how something was checked.
+          </p>
+
+          <div className="mt-10 rounded-2xl border border-border/60 bg-card p-6 md:p-8">
+            <p className="text-sm uppercase tracking-widest text-accent font-medium">
+              Verification labels
             </p>
+            <p className="mt-2 text-foreground leading-relaxed">
+              New content carries one of these tags so you know how it was checked.
+            </p>
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              <VerificationBadge kind="visited" />
+              <VerificationBadge kind="researched" />
+            </div>
           </div>
         </div>
       </section>
