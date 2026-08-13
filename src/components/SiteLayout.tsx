@@ -108,7 +108,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             height={64}
             loading="lazy"
           />
-          <p className="max-w-3xl text-xs sm:text-sm text-foreground/80 leading-relaxed">
+          <p className="max-w-3xl text-xs sm:text-sm text-foreground leading-relaxed">
             Halal Travel Scout is a member of the Halal Travel Network (HTN), a global network for businesses and professionals engaged in halal travel. Our membership reflects our commitment to continuous learning and creating informed, responsible travel content for Muslim travellers.
           </p>
         </div>
