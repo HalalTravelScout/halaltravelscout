@@ -116,14 +116,27 @@ function About() {
 
           <div className="mt-10 rounded-2xl border border-border/60 bg-card p-6 md:p-8">
             <p className="text-sm uppercase tracking-widest text-accent font-medium">
-              Verification labels
+              Verification Labels
             </p>
             <p className="mt-2 text-foreground leading-relaxed">
-              New content carries one of these tags so you know how it was checked.
+              Throughout HalalTravelScout, places and claims are marked with one of
+              two labels, so you always know how the information was checked:
             </p>
-            <div className="mt-5 flex flex-wrap items-center gap-3">
-              <VerificationBadge kind="visited" />
-              <VerificationBadge kind="researched" />
+            <div className="mt-6 grid gap-6 sm:grid-cols-2">
+              <div>
+                <VerificationBadge kind="visited" />
+                <p className="mt-3 text-sm text-foreground leading-relaxed">
+                  I've been there myself — asked locals directly, checked halal
+                  status on the ground, seen it firsthand.
+                </p>
+              </div>
+              <div>
+                <VerificationBadge kind="researched" />
+                <p className="mt-3 text-sm text-foreground leading-relaxed">
+                  Carefully compiled from reputable, official sources for places
+                  not yet personally visited.
+                </p>
+              </div>
             </div>
           </div>
         </div>
