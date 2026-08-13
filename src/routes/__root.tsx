@@ -10,6 +10,27 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+
+// Tawk.to live chat widget loader. Loaded once, site-wide, in the browser.
+function TawkToLoader() {
+  useEffect(() => {
+    // Tawk.to embed loader (https://embed.tawk.to/...) — runs as-is.
+    (function () {
+      // @ts-expect-error - Tawk_API is a global injected by the widget
+      window.Tawk_API = window.Tawk_API || {};
+      // @ts-expect-error - Tawk_LoadStart is a global injected by the widget
+      window.Tawk_LoadStart = new Date();
+      const s1 = document.createElement("script");
+      const s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/6a7d3affab01cc1d4ca427b0/1jvsisudt";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode!.insertBefore(s1, s0);
+    })();
+  }, []);
+  return null;
+}
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
