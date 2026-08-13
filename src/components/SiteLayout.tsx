@@ -98,6 +98,20 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             <p>© {new Date().getFullYear()} HalalTravelScout. All rights reserved.</p>
           </div>
         </div>
+
+        <div className="border-t border-border/70 mt-8 pt-8 flex flex-col items-center gap-4 text-center">
+          <img
+            src={htnBadge}
+            alt="Halal Travel Network (HTN) member badge"
+            className="h-[64px] w-auto object-contain"
+            width={89}
+            height={64}
+            loading="lazy"
+          />
+          <p className="max-w-3xl text-xs sm:text-sm text-foreground/80 leading-relaxed">
+            Halal Travel Scout is a member of the Halal Travel Network (HTN), a global network for businesses and professionals engaged in halal travel. Our membership reflects our commitment to continuous learning and creating informed, responsible travel content for Muslim travellers.
+          </p>
+        </div>
       </footer>
     </div>
   );
