@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { VerificationBadge } from "@/components/VerificationBadge";
-import mapImg from "@/assets/map-objects.jpg";
+import aboutHero from "@/assets/about-hero.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -58,8 +58,8 @@ function About() {
 
           </div>
           <img
-            src={mapImg}
-            alt="Vintage world map with compass and passport"
+            src={aboutHero}
+            alt="Travel planning essentials for halal-conscious trips — map, compass, prayer beads, and a checklist of what HalalTravelScout verifies: halal food, prayer facilities, family-friendly places, and authentic experiences"
             loading="lazy"
             width={1024}
             height={1024}
