@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
+import { VerificationBadge } from "@/components/VerificationBadge";
 import mapImg from "@/assets/map-objects.jpg";
 
 export const Route = createFileRoute("/about")({
