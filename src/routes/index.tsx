@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
-import foodImg from "@/assets/food-malaysia.jpg";
+import foodImg from "@/assets/food-verified.png";
 const dioramaUrl = "/home-diorama.webp";
 
 export const Route = createFileRoute("/")({
@@ -149,7 +149,7 @@ function Home() {
           <div className="relative">
             <img
               src={foodImg}
-              alt="Overhead spread of halal dishes on a wooden table"
+              alt="A spread of halal Middle Eastern and Mediterranean dishes — grilled kebabs, shrimp, hummus, tabbouleh salad, olives, baklava, dates, and tea — on a table, with a small verified checkmark card in the scene"
               loading="lazy"
               width={1024}
               height={1024}
